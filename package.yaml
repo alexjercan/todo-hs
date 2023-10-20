@@ -1,0 +1,37 @@
+name:                todo-hs
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/alexjercan/todo-hs#readme
+license:             BSD-3-Clause
+author:              Alex Jercan
+maintainer:          alex_jercan27@yahoo.com
+copyright:           2023 Alex Jercan
+category:            Tool
+extra-source-files:
+- README.md
+- CHANGELOG.md
+
+dependencies:
+  - base >= 4.7 && < 5
+  - cmark
+  - text
+  - optparse-applicative
+  - time
+  - directory
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-export-lists
+- -Wmissing-home-modules
+- -Wpartial-fields
+- -Wredundant-constraints
+
+executables:
+  todo-hs:
+    source-dirs:      src
+    main:             Main.hs
